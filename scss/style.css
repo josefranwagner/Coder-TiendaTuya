@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px 2px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 7fr;
+      grid-template-rows: 1fr 7fr;
+      grid-template-areas: "nav nav nav" "body body body";
+}
+
+article {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: body;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav-contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+main {
+  background-color: #eff8ff;
+}
+
+.seccion {
+  display: inline-block;
+  padding: 10px;
+  text-align: right;
+  font-size: 15px;
+}
+
+.seccion a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h4 {
+  text-align: right;
+}
+
+header {
+  background-image: url(portada.jpg);
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.portada {
+  color: white;
+  font-size: 95px;
+  text-align: center;
+  font-family: 'Fredericka the Great',cursive;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-shadow: 2px 2px 2px black;
+}
+
+table {
+  border: 1px solid;
+  text-align: center;
+  vertical-align: center;
+}
+
+table th {
+  background-color: #153e90;
+  text-align: center;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+div ul {
+  list-style: none;
+  font-size: 0;
+  padding: 15px;
+}
+
+div li {
+  text-align: center;
+  border-style: groove;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+div ul ul {
+  position: absolute;
+  display: none;
+  background-color: #eff8ff;
+  padding: 2px;
+}
+
+div ul ul li {
+  display: block;
+}
+
+div ul li:hover ul {
+  display: block;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eff8ff), to(#cdfbee));
+  background-image: linear-gradient(to bottom, #eff8ff, #cdfbee);
+}
+
+footer li:hover {
+  text-decoration: underline;
+  -webkit-transform: skew(2deg, 2deg);
+          transform: skew(2deg, 2deg);
+}
+/*# sourceMappingURL=style.css.map */
